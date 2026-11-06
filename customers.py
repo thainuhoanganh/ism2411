@@ -43,7 +43,7 @@ try:
 except KeyError as error:
     print('KeyError caught:', error)
 
-print('--- Exercsie 4 ---')
+print('--- Exercise 4 ---')
 for key,value in customer.items():
     print(f'{key}: {value}')
 # Iterating without .items() only yields the keys by default, 
@@ -65,7 +65,7 @@ purchase = 200
 discount_rate = tier_discounts.get(customer['tier'], 0)
 final_price = purchase * (1-discount_rate)
 
-print(f"Tier:{customer['tier']}")
+print(f"Tier: {customer['tier']}")
 print(f'Discount Rate: {discount_rate * 100}%')
 print(f'Final Price: ${final_price:.2f}')
 
