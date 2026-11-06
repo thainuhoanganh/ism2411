@@ -22,3 +22,23 @@ print(customer['email'])
 print(customer ['tier'])
 print(customer['ytd_spend'])
 print (customer)
+
+print('--- Exercise 2 ---')
+customer['phone'] = '555-5555' # adding a new key_value pair to the dictionary
+print(customer)
+
+customer ['tier'] = 'platinum'# updating a value of an existing key 
+print(customer)
+
+del customer['email'] #deleting a key-value pair 
+print(customer)
+
+
+
+print('--- Exercise 3 ----')
+print(customer.get('email', 'no email on file'))
+
+try:
+    print(customer['email'])
+except KeyError as error:
+    print('KeyError caught:', error)
